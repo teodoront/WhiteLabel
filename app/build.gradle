@@ -107,4 +107,6 @@ kapt {
         option("-Adagger.fastInit=ENABLED")
         option("-Adagger.hilt.android.internal.disableAndroidSuperclassValidation=true")
     }
+
+    apply plugin: 'com.google.gms.google-services'
 }

@@ -1,0 +1,126 @@
+{
+  "project_info": {
+    "project_number": "775620875946",
+    "project_id": "whitelabel-6bdee",
+    "storage_bucket": "whitelabel-6bdee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775620875946:android:1a14be1cd64100ff2662d3",
+        "android_client_info": {
+          "package_name": "br.com.orlandoneto.whitelabel.bike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775620875946-44s49l7l0im1rkem22v7rv6fj92pm1op.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY7TYXXp1hkHf483fGVD_Tl7slL4YpnGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775620875946-44s49l7l0im1rkem22v7rv6fj92pm1op.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775620875946:android:5f14b47209c93c5e2662d3",
+        "android_client_info": {
+          "package_name": "br.com.orlandoneto.whitelabel.bike.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775620875946-44s49l7l0im1rkem22v7rv6fj92pm1op.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY7TYXXp1hkHf483fGVD_Tl7slL4YpnGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775620875946-44s49l7l0im1rkem22v7rv6fj92pm1op.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775620875946:android:39d4eccf1f3e5a062662d3",
+        "android_client_info": {
+          "package_name": "br.com.orlandoneto.whitelabel.car"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775620875946-44s49l7l0im1rkem22v7rv6fj92pm1op.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY7TYXXp1hkHf483fGVD_Tl7slL4YpnGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775620875946-44s49l7l0im1rkem22v7rv6fj92pm1op.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775620875946:android:9f07964f2edd40d32662d3",
+        "android_client_info": {
+          "package_name": "br.com.orlandoneto.whitelabel.car.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775620875946-44s49l7l0im1rkem22v7rv6fj92pm1op.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY7TYXXp1hkHf483fGVD_Tl7slL4YpnGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775620875946-44s49l7l0im1rkem22v7rv6fj92pm1op.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
