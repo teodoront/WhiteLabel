@@ -5,8 +5,10 @@ import br.com.orlandoneto.whitelabel.BuildConfig
 import br.com.orlandoneto.whitelabel.domain.model.Product
 import br.com.orlandoneto.whitelabel.util.COLLECTION_PRODUCTS
 import br.com.orlandoneto.whitelabel.util.COLLECTION_ROOT
+import br.com.orlandoneto.whitelabel.util.STORAGE_IMAGES
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
+import java.util.*
 import kotlin.coroutines.suspendCoroutine
 
 class FirebaseProductDataSource(
@@ -37,14 +39,36 @@ class FirebaseProductDataSource(
                 continuation.resumeWith(Result.failure(exception))
 
             }
-        }//finalizando a implementação do FirebaseDataSource
+        }
     }
 
     override suspend fun uploadProductImage(imageUri: Uri): String {
-        TODO("Not yet implemented")
+        return suspendCoroutine { continuation ->
+            val randomKey = UUID.randomUUID()
+            val childReference = storeReference.child(
+                "$STORAGE_IMAGES/${BuildConfig.FIREBASE_FLAVOR_COLLECTION}/$randomKey"
+            )
+
+            childReference.putFile(imageUri).addOnSuccessListener {taskSnapshot ->
+
+
+            }.addOnFailureListener{exception ->
+                continuation.resumeWith(Result.failure(exception))
+            }
+
+        }
     }
 
     override suspend fun createProduct(product: Product): Product {
-        TODO("Not yet implemented")
+        return suspendCoroutine { continuation ->
+            documentReference.collection(COLLECTION_PRODUCTS).document(System.currentTimeMillis().toString())
+                .set(product)
+                .addOnSuccessListener {
+                    continuation.resumeWith(Result.success(product))
+                }.addOnFailureListener{
+                    continuation.resumeWith(Result.failure(it))
+                }
+/*Implementando os Casos de Uso da Aplicação*/
+        }
     }
 }
