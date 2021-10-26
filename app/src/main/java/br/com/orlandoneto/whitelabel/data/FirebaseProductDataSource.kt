@@ -68,7 +68,6 @@ class FirebaseProductDataSource(
                 }.addOnFailureListener{
                     continuation.resumeWith(Result.failure(it))
                 }
-/*Implementando os Casos de Uso da Aplicação*/
         }
     }
 }
