@@ -9,5 +9,4 @@ class GetProductUseCaseImpl(
     override suspend fun invoke(): List<Product> {
         return productRepository.getProducts()
     }
-    /*Implementando o layout da tela Adicionar Produto*/
 }
